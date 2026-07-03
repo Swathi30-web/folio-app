@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Folio — Design Agency Landing Page
 
 A pixel-close implementation of the provided Figma design, built with **React 19**, **Tailwind CSS 3**, and **Vite**.
@@ -36,3 +37,6 @@ src/
 - Colour palette, type scale and radii are centralised in `tailwind.config.js`.
 - Illustrations are original lightweight SVG components (not raster exports) so they
   stay crisp at any size and are easy to re-theme via colour props.
+=======
+# folio-app
+>>>>>>> e97d2e618f500d8c3c8b281cfd7d5a0ad68bd998
