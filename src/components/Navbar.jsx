@@ -5,10 +5,10 @@ import Logo from './Logo';
 import Button from './Button';
 
 const LINKS = [
-  { label: 'About', href: '/#about' },
-  { label: 'Work', href: '/#work' },
-  { label: 'Services', href: '/#services' },
-  { label: 'Jobs', href: '/#jobs', dot: true },
+  { label: 'About', href: '#about' },
+  { label: 'Work', href: '#work' },
+  { label: 'Services', href: '#services' },
+  { label: 'Jobs', href: '#jobs', dot: true },
 ];
 
 export default function Navbar({ light = false }) {
