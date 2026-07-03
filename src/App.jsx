@@ -5,13 +5,12 @@ import Contact from './pages/Contact';
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Folio-app">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/bento" element={<BentoProduct />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-      
     </BrowserRouter>
   );
 }
