@@ -1,17 +1,11 @@
 import React from 'react';
-import SectionHeader from "../components/SectionHeader";
-
-// 1. IMPORT YOUR IMAGES (Ensure these files exist in src/assets/ and names match exactly)
-import bentoImage from "../assets/img.png"; 
-import icon1 from "../assets/img1.png"; 
-import icon2 from "../assets/img2.png"; 
 
 const cardData = [
   {
     id: 1,
     iconColor: 'bg-orange-400',
     text: 'Fully Editable',
-    iconImage: '/img1.png', // The "/" tells React to look in the 'public' folder
+    iconImage: '/img1.png', 
   },
   {
     id: 2,
@@ -26,12 +20,12 @@ export default function OverviewSection() {
     <section id="overview-content" className="bg-white py-20 px-6 md:px-16 lg:px-24 w-full scroll-mt-20">
       <div className="container mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
         
-        {/* ==================== LEFT COLUMN: 3D Illustration ==================== */}
+        {/* LEFT COLUMN */}
         <div className="lg:col-span-5 flex flex-col items-center">
           <div className="relative w-72 h-72 sm:w-85 sm:h-85 md:w-96 md:h-96 bg-purple-300 rounded-full flex justify-center items-center shadow-lg overflow-visible">
             <img 
-              src={bentoImage} 
-              alt="3D Visual Design System Layout" 
+              src="/img.png" 
+              alt="3D Visual Design System" 
               className="w-[110%] h-auto object-contain transform -translate-x-2 drop-shadow-xl"
             />
           </div>
@@ -48,7 +42,7 @@ export default function OverviewSection() {
           </div>
         </div>
 
-        {/* ==================== RIGHT COLUMN: Content ==================== */}
+        {/* RIGHT COLUMN */}
         <div className="lg:col-span-7 flex flex-col space-y-6">
           <div className="flex space-x-4 items-center text-sm font-semibold tracking-wide">
             <span className="text-slate-400">01</span>
@@ -58,11 +52,6 @@ export default function OverviewSection() {
           <h2 className="text-4xl md:text-5xl font-black text-slate-900 leading-[1.15] tracking-tight max-w-xl">
             The First Fully Editable, 3D Visual Design System.
           </h2>
-
-          <p className="text-slate-500 text-sm md:text-base leading-relaxed max-w-2xl">
-            Effortlessly combine different elements to create compelling compositions 
-            that will help you tell a better story for your projects.
-          </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-6 w-full max-w-xl">
             {cardData.map((card) => (
