@@ -8,7 +8,7 @@ export default function App() {
     <BrowserRouter basename="/folio-app">
       <Routes>
         <Route path="/" element={<Home />} />
-       <Route path="/Work" element={<Work />} />
+       <Route path="/work" element={<Work />} />
         <Route path="/bento" element={<BentoProduct />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>

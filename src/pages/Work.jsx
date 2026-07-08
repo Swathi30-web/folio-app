@@ -2,11 +2,12 @@ import { useState, useEffect } from 'react';
 import { Menu, X, ArrowRight, Globe, Award } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
-// Base Components Imports
+// Base Components
 import Logo from "../components/Logo"; 
 import Button from "../components/Button";
+import bentoImage from "../assets/img.png";
 
-// Custom Section Components Imports
+// Custom Section Components
 import OverviewSection from "../components/OverviewSection";
 import FolioAgency from "../components/FolioAgency"; 
 import ByTheNumbers from '../components/ByTheNumbers'; 
@@ -24,7 +25,6 @@ const LINKS = [
 
 export default function Work({ light = false }) {
   const [open, setOpen] = useState(false);
-
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -114,7 +114,7 @@ export default function Work({ light = false }) {
               <ArrowRight size={20} />
             </div>
 
-           <div>
+            <div>
               <span className="inline-block bg-orange-100 text-orange-600 px-4 py-1.5 rounded-full text-xs font-bold tracking-wide">
                 Featured Product
               </span>
@@ -153,36 +153,26 @@ export default function Work({ light = false }) {
           <div className="lg:col-span-7 relative flex justify-center items-center w-full">
             <div className="absolute right-[-10%] top-1/2 -translate-y-1/2 w-[100%] h-[480px] bg-indigo-600 rounded-l-[100px] rounded-r-[40px] rotate-[-4deg] transform scale-y-105 z-0" />
             <div className="relative z-10 w-full max-w-xl p-4 flex justify-center">
-              <img 
-                src="src/assets/img.png" 
-                alt="Bento Grid Layout" 
-                className="w-full h-auto object-contain drop-shadow-[0_35px_35px_rgba(0,0,0,0.3)]" 
+              <img
+                src={bentoImage}
+                alt="Bento Grid Layout"
+                className="w-full h-auto object-contain drop-shadow-[0_35px_35px_rgba(0,0,0,0.3)]"
               />
             </div>
           </div>
-
         </div>
       </section>
 
-      {/* ==================== MAIN CONTENT AREA (ON SCROLL) ==================== */}
+      {/* ==================== MAIN CONTENT AREA ==================== */}
       <main>
-        {}
         <OverviewSection />
-
-        {/* 2. FOLIO AGENCY SECTION */}
-        {}
         <FolioAgency />
-        {/* 4. Light Theme Section (Evolving Look) */}
-  <EvolvingLook />
-  {/* 2.  */}
+        <ByTheNumbers />
+        <EvolvingLook />
         <CallToAction />
-         {/* 2.  */}
         <RecentWorks />
-         {/* 2.  */}
         <FooterCTA />
-
       </main>
-
     </div>
   );
 }
