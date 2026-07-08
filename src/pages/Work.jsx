@@ -20,7 +20,7 @@ const LINKS = [
   { label: 'About', to: '/#about' },
   { label: 'Work', to: '/Work' }, 
   { label: 'Services', to: '/#services' },
-  { label: 'Jobs', to: '/jobs', dot: true },
+  { label: 'Jobs', to: '/#jobs', dot: true },
 ];
 
 export default function Work({ light = false }) {
