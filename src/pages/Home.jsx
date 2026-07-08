@@ -1,38 +1,27 @@
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
-import ContactCTA from '../components/ContactCTA';
-import Hero from '../sections/home/Hero';
-import WhoWeAre from '../sections/home/WhoWeAre';
-import WhatWeDo from '../sections/home/WhatWeDo';
-import Achievement from '../sections/home/Achievement';
-import Partnerships from '../sections/home/Partnerships';
-import HiringCTA from '../sections/home/HiringCTA';
-import Jobs from '../sections/home/Jobs';
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import ContactCTA from "../components/ContactCTA";
+
+import Hero from "../sections/home/Hero";
+import WhoWeAre from "../sections/home/WhoWeAre";
+import WhatWeDo from "../sections/home/WhatWeDo";
+import Achievement from "../sections/home/Achievement";
+import Partnerships from "../sections/home/Partnerships";
+import HiringCTA from "../sections/home/HiringCTA";
+import Jobs from "../sections/home/Jobs";
 
 export default function Home() {
   return (
-    <div className="bg-white">
+    <div className="min-h-screen bg-white text-ink transition-colors duration-300 dark:bg-[#0F172A] dark:text-white">
       <Navbar />
 
       <Hero />
-
-      <section id="about">
-        <WhoWeAre />
-      </section>
-
-      <section id="services">
-        <WhatWeDo />
-      </section>
-
+      <WhoWeAre />
+      <WhatWeDo />
       <Achievement />
-
       <Partnerships />
-
       <HiringCTA />
-
-      <section id="jobs">
-        <Jobs />
-      </section>
+      <Jobs />
 
       <ContactCTA
         greeting="Say hello"
