@@ -5,6 +5,7 @@ const VARIANTS = {
   outline: 'bg-transparent text-white border border-white/40 hover:bg-white/10',
 };
 
+
 export default function Button({
   children,
   variant = 'primary',

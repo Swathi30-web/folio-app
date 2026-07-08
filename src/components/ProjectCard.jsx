@@ -26,14 +26,9 @@ export default function ProjectCard({
           <h4 className={`font-display text-lg font-bold ${dark ? 'text-white' : 'text-ink'}`}>
             {title}
           </h4>
-          <Link
-            to={to}
-            className={`grid h-8 w-8 shrink-0 place-items-center rounded-full ${
-              dark ? 'bg-white text-ink' : 'bg-ink text-white'
-            }`}
-          >
-            <ArrowUpRight size={15} />
-          </Link>
+         
+          
+    
         </div>
         {description && (
           <p className={`text-sm leading-relaxed ${dark ? 'text-white/60' : 'text-ink/50'}`}>

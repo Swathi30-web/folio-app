@@ -6,7 +6,7 @@ import Button from './Button';
 
 const LINKS = [
   { label: 'About', href: '#about' },
-  { label: 'Work', href: '#work' },
+  { label: 'Work', href: '/folio-app/Work' },
   { label: 'Services', href: '#services' },
   { label: 'Jobs', href: '#jobs', dot: true },
 ];
