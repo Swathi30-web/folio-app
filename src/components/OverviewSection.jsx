@@ -1,17 +1,22 @@
 import React from 'react';
 
+// Use these imports. If they turn grey/unused, the path is wrong!
+import bentoImage from "../assets/img.png";
+import icon1 from "../assets/img1.png";
+import icon2 from "../assets/img2.png";
+
 const cardData = [
   {
     id: 1,
     iconColor: 'bg-orange-400',
     text: 'Fully Editable',
-    iconImage: './img1.png', 
+    iconImage: icon1, // Use the imported variable
   },
   {
     id: 2,
     iconColor: 'bg-pink-400',
     text: 'High Resolution',
-    iconImage: './img2.png',
+    iconImage: icon2, // Use the imported variable
   }
 ];
 
@@ -24,51 +29,26 @@ export default function OverviewSection() {
         <div className="lg:col-span-5 flex flex-col items-center">
           <div className="relative w-72 h-72 sm:w-85 sm:h-85 md:w-96 md:h-96 bg-purple-300 rounded-full flex justify-center items-center shadow-lg overflow-visible">
             <img 
-              src="/img.png" 
-              alt="3D Visual Design System" 
+              src={bentoImage} // Using the variable
+              alt="3D Visual Design System Layout" 
               className="w-[110%] h-auto object-contain transform -translate-x-2 drop-shadow-xl"
             />
-          </div>
-
-          <div className="flex space-x-3 mt-10">
-            {[1, 2, 3].map((_, index) => (
-              <div 
-                key={index}
-                className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
-                  index === 1 ? 'bg-indigo-600 w-6' : 'bg-slate-200'
-                }`}
-              />
-            ))}
           </div>
         </div>
 
         {/* RIGHT COLUMN */}
         <div className="lg:col-span-7 flex flex-col space-y-6">
-          <div className="flex space-x-4 items-center text-sm font-semibold tracking-wide">
-            <span className="text-slate-400">01</span>
-            <span className="text-indigo-600 uppercase">Overview</span>
-          </div>
-
-          <h2 className="text-4xl md:text-5xl font-black text-slate-900 leading-[1.15] tracking-tight max-w-xl">
-            The First Fully Editable, 3D Visual Design System.
-          </h2>
-
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-6 w-full max-w-xl">
             {cardData.map((card) => (
-              <div 
-                key={card.id} 
-                className="bg-white border border-slate-100 rounded-[32px] p-8 flex flex-col items-center justify-center space-y-6 shadow-2xl"
-              >
-                <div className={`w-24 h-24 rounded-full flex justify-center items-center shadow-inner ${card.iconColor} bg-opacity-70`}>
+              <div key={card.id} className="bg-white border border-slate-100 rounded-[32px] p-8 flex flex-col items-center">
+                <div className={`w-24 h-24 rounded-full flex justify-center items-center ${card.iconColor} bg-opacity-70`}>
                   <img 
-                    src={card.iconImage} 
+                    src={card.iconImage} // Using the variable
                     alt={card.text} 
                     className="w-14 h-14 object-contain" 
                   />
                 </div>
-                <p className="text-indigo-600 text-base md:text-lg font-bold tracking-tight">
-                  {card.text}
-                </p>
+                <p className="text-indigo-600 text-base md:text-lg font-bold">{card.text}</p>
               </div>
             ))}
           </div>
