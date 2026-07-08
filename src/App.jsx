@@ -5,7 +5,7 @@ import Contact from './pages/Contact';
 import Work from './pages/Work';
 export default function App() {
   return (
-    <BrowserRouter basename="/Folio-app">
+    <BrowserRouter basename="/folio-app">
       <Routes>
         <Route path="/" element={<Home />} />
        <Route path="/Work" element={<Work />} />
