@@ -1,14 +1,14 @@
-import PhoneArt from '../../components/illustrations/PhoneArt';
-import logo from '../../assets/Logo.jpeg';
+import PhoneArt from "../../components/illustrations/PhoneArt";
+import logo from "../../assets/Logo.jpeg";
 
 export default function Achievement() {
   return (
-    <section className="bg-mist py-20 relative overflow-hidden">
+    <section className="bg-mist dark:bg-[#0F172A] py-20 relative overflow-hidden transition-colors duration-300">
       <div className="container-page grid md:grid-cols-2 gap-12 items-center">
 
         {/* Left Side */}
         <div className="relative flex justify-center items-center py-10">
-          <div className="absolute h-72 w-72 rounded-full bg-blush/60 -left-4 md:left-10 top-1/2 -translate-y-1/2 -z-10" />
+          <div className="absolute h-72 w-72 rounded-full bg-blush/60 dark:bg-primary-500/20 -left-4 md:left-10 top-1/2 -translate-y-1/2 -z-10 transition-colors duration-300" />
 
           <div className="relative z-10">
             <PhoneArt className="w-64 h-auto" />
@@ -26,17 +26,17 @@ export default function Achievement() {
               className="w-6 h-6 object-contain"
             />
 
-            <span className="text-gray-400 text-lg font-semibold">
+            <span className="text-gray-500 dark:text-gray-400 text-lg font-semibold transition-colors duration-300">
               03.
             </span>
 
-            <span className="text-[#1E1A3A] text-2xl ">
+            <span className="text-[#1E1A3A] dark:text-white text-2xl transition-colors duration-300">
               Achievement
             </span>
           </div>
 
           {/* Title */}
-          <h3 className="font-display text-2xl sm:text-3xl md:text-4xl font-bold text-ink max-w-md leading-tight mb-12">
+          <h3 className="font-display text-2xl sm:text-3xl md:text-4xl font-bold text-ink dark:text-white max-w-md leading-tight mb-12 transition-colors duration-300">
             A design team building a curated marketplace for UI designers.
           </h3>
 
@@ -46,7 +46,7 @@ export default function Achievement() {
               68
             </span>
 
-            <div className="flex items-center gap-2 text-ink font-semibold text-base sm:text-lg">
+            <div className="flex items-center gap-2 text-ink dark:text-white font-semibold text-base sm:text-lg transition-colors duration-300">
               <span
                 role="img"
                 aria-label="sunglasses"

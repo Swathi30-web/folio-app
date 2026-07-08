@@ -9,7 +9,11 @@ html {
 }
 
 body {
-  @apply font-body text-ink antialiased;
+  @apply font-body antialiased bg-white text-ink transition-colors duration-300;
+}
+
+.dark body {
+  @apply bg-slate-900 text-white;
 }
 
 ::selection {

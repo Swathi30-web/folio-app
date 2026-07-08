@@ -1,47 +1,52 @@
 import React from 'react';
-import logo from '../assets/Logo.jpeg'; 
+import logo from '../assets/Logo.jpeg';
+import img2 from '../assets/img2.png';
+
 export default function CallToAction() {
   return (
-    <section className="py-24 px-8 md:px-24 bg-white">
+    <section className="py-24 px-8 md:px-24 bg-white dark:bg-[#0F172A] transition-colors duration-300">
       <div className="container mx-auto">
-        <div className="bg-indigo-600 rounded-[40px] overflow-hidden flex flex-col md:flex-row items-center text-white relative">
-          
+        <div className="relative flex flex-col items-center overflow-hidden rounded-[40px] bg-indigo-600 text-white md:flex-row shadow-2xl">
+
           {/* Mobile Mockup Area */}
-          {/* Mobile Mockup Area */}
-<div className="md:w-1/2 p-12 flex justify-center">
-  <div className="bg-white/10 p-6 rounded-3xl backdrop-blur-sm shadow-xl">
-    <div className="w-64 h-96 bg-white rounded-2xl overflow-hidden flex items-center justify-center shadow-2xl">
-      {/*  */}
-      <img 
-        src="src/assets/img2.png" 
-        alt="3D Mobile Mockup" 
-        className="w-full h-full object-cover"
-      />
-    </div>
-  </div>
-</div>
+          <div className="flex justify-center p-12 md:w-1/2">
+            <div className="rounded-3xl bg-white/10 p-6 shadow-xl backdrop-blur-sm">
+              <div className="flex h-96 w-64 items-center justify-center overflow-hidden rounded-2xl bg-white shadow-2xl">
+                <img
+                  src={img2}
+                  alt="3D Mobile Mockup"
+                  className="h-full w-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
 
           {/* Text Content */}
-          <div className="md:w-1/2 p-12 pr-24">
-          <div className="flex items-center gap-3 mb-4">
-  <img
-    src={logo}
-    alt="Logo"
-    className="w-8 h-8 object-contain"
-  />
-  <p className="text-xs font-bold tracking-widest uppercase opacity-80">
-    04. Call to action
-  </p>
-</div>
+          <div className="p-12 md:w-1/2 md:pr-24 z-10">
+            <div className="mb-4 flex items-center gap-3">
+              <img
+                src={logo}
+                alt="Logo"
+                className="h-8 w-8 object-contain"
+              />
+              <p className="text-xs font-bold uppercase tracking-widest opacity-80">
+                04. Call to action
+              </p>
+            </div>
 
-            <h2 className="text-5xl font-black mb-8 leading-tight">Auto-Updatable <br />Global Styleguide</h2>
-            <button className="bg-white text-indigo-600 px-8 py-4 rounded-xl font-bold hover:bg-indigo-50 transition">
+            <h2 className="mb-8 text-5xl font-black leading-tight">
+              Auto-Updatable
+              <br />
+              Global Styleguide
+            </h2>
+
+            <button className="rounded-xl bg-white dark:bg-slate-900 px-8 py-4 font-bold text-indigo-600 dark:text-white transition hover:bg-indigo-50 dark:hover:bg-slate-800">
               Download Now
             </button>
           </div>
 
           {/* Decorative Pink Panel */}
-          <div className="absolute right-0 top-0 bottom-0 w-1/3 bg-pink-300/30 rounded-l-[40px] z-0 pointer-events-none" />
+          <div className="pointer-events-none absolute right-0 top-0 bottom-0 z-0 w-1/3 rounded-l-[40px] bg-pink-300/30 dark:bg-pink-900/20" />
         </div>
       </div>
     </section>
