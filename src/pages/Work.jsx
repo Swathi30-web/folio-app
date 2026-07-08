@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 // Base Components Imports
 import Logo from "../components/Logo"; 
 import Button from "../components/Button";
-
+import bentoImage from "../../assets/img.png";
 // Custom Section Components Imports
 import OverviewSection from "../components/OverviewSection";
 import FolioAgency from "../components/FolioAgency"; 
@@ -153,11 +153,11 @@ export default function Work({ light = false }) {
           <div className="lg:col-span-7 relative flex justify-center items-center w-full">
             <div className="absolute right-[-10%] top-1/2 -translate-y-1/2 w-[100%] h-[480px] bg-indigo-600 rounded-l-[100px] rounded-r-[40px] rotate-[-4deg] transform scale-y-105 z-0" />
             <div className="relative z-10 w-full max-w-xl p-4 flex justify-center">
-              <img 
-                src="src/assets/img.png" 
-                alt="Bento Grid Layout" 
-                className="w-full h-auto object-contain drop-shadow-[0_35px_35px_rgba(0,0,0,0.3)]" 
-              />
+               <img
+        src={bentoImage}
+        alt="Bento Grid Layout"
+        className="w-full h-auto object-contain drop-shadow-[0_35px_35px_rgba(0,0,0,0.3)]"
+      />
             </div>
           </div>
 
