@@ -11,13 +11,13 @@ const cardData = [
     id: 1,
     iconColor: 'bg-orange-400',
     text: 'Fully Editable',
-    iconImage: icon1, // Use imported variable
+    iconImage: '/img1.png', // The "/" tells React to look in the 'public' folder
   },
   {
     id: 2,
     iconColor: 'bg-pink-400',
     text: 'High Resolution',
-    iconImage: icon2, // Use imported variable
+    iconImage: '/img2.png',
   }
 ];
 
