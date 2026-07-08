@@ -5,13 +5,13 @@ const cardData = [
     id: 1,
     iconColor: 'bg-orange-400',
     text: 'Fully Editable',
-    iconImage: '/img1.png', 
+    iconImage: './img1.png', 
   },
   {
     id: 2,
     iconColor: 'bg-pink-400',
     text: 'High Resolution',
-    iconImage: '/img2.png',
+    iconImage: './img2.png',
   }
 ];
 
