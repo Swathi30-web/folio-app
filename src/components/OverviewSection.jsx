@@ -1,20 +1,26 @@
 import React from 'react';
 import SectionHeader from "../components/SectionHeader";
+
+// 1. Import your images from the assets folder
+// Make sure these filenames match EXACTLY (check if it's .png or .jpg)
+import bentoImage from "../assets/img.png"; 
+import icon1 from "../assets/img1.png"; 
+import icon2 from "../assets/img2.png"; 
+
 const cardData = [
   {
     id: 1,
     iconColor: 'bg-orange-400',
     text: 'Fully Editable',
-    iconImage: 'src/assets/img.png', // Unga knob image path clear-ah kuduthukonga
+    iconImage: icon1, // Use the icon1 import here
   },
   {
     id: 2,
     iconColor: 'bg-pink-400',
     text: 'High Resolution',
-    iconImage: 'src/assets/img.png', // Unga sphere image path clear-ah kuduthukonga
+    iconImage: icon2, // Use the icon2 import here
   }
 ];
-
 export default function OverviewSection() {
   return (
     <section id="overview-content" className="bg-white py-20 px-6 md:px-16 lg:px-24 w-full scroll-mt-20">
@@ -27,10 +33,10 @@ export default function OverviewSection() {
           <div className="relative w-72 h-72 sm:w-85 sm:h-85 md:w-96 md:h-96 bg-purple-300 rounded-full flex justify-center items-center shadow-lg overflow-visible">
             
             <img 
-              src="src/assets/img.png" 
-              alt="3D Visual Design System Layout" 
-              className="w-[110%] h-auto object-contain transform -translate-x-2 drop-shadow-xl"
-            />
+  src={bentoImage} 
+  alt="3D Visual Design System Layout" 
+  className="w-[110%] h-auto object-contain transform -translate-x-2 drop-shadow-xl"
+/>
           </div>
 
           {/* Slider Pagination Dots */}
@@ -84,11 +90,11 @@ export default function OverviewSection() {
               >
                 {/* Inner Circle Container for 3D Icon */}
                 <div className={`w-24 h-24 rounded-full flex justify-center items-center shadow-inner ${card.iconColor} bg-opacity-70 relative`}>
-                  <img 
-                    src={card.iconImage} 
-                    alt={card.text} 
-                    className="w-14 h-14 object-contain drop-shadow-md transform hover:scale-110 transition-transform duration-300" 
-                  />
+              <img 
+  src={card.iconImage} 
+  alt={card.text} 
+  className="w-14 h-14 object-contain drop-shadow-md transform hover:scale-110 transition-transform duration-300" 
+/>
                 </div>
                 
                 {/* Card Label */}
