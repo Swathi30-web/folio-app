@@ -13,18 +13,33 @@ export default function Home() {
   return (
     <div className="bg-white">
       <Navbar />
+
       <Hero />
-      <WhoWeAre />
-      <WhatWeDo />
+
+      <section id="about">
+        <WhoWeAre />
+      </section>
+
+      <section id="services">
+        <WhatWeDo />
+      </section>
+
       <Achievement />
+
       <Partnerships />
+
       <HiringCTA />
-      <Jobs />
+
+      <section id="jobs">
+        <Jobs />
+      </section>
+
       <ContactCTA
         greeting="Say hello"
         intro="A design team building a curated marketplace for UI designers."
         heading="Let's talk about your next project"
       />
+
       <Footer />
     </div>
   );
