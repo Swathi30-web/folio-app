@@ -4,8 +4,7 @@ import { Link } from 'react-router-dom';
 
 // Base Components Imports
 import Logo from "../components/Logo"; 
-import Button from "../components/Button";
-import bentoImage from "../../assets/img.png";
+import Button from "../components/Button";import bentoImage from "../../assets/img.png";
 // Custom Section Components Imports
 import OverviewSection from "../components/OverviewSection";
 import FolioAgency from "../components/FolioAgency"; 
